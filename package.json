@@ -1,0 +1,51 @@
+{
+  "name": "env-startup-check",
+  "version": "1.0.0",
+  "description": "Fail fast at startup when environment variables are missing or invalid. Reports every problem at once, never prints secret values, can derive required vars from .env.example. Zero dependencies.",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "bin": {
+    "env-startup-check": "cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "cli.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "env",
+    "environment variables",
+    "dotenv",
+    "validation",
+    "startup",
+    "config",
+    "fail fast",
+    "12-factor",
+    "env.example"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saimulhasnain-dev/env-startup-check.git"
+  },
+  "homepage": "https://github.com/saimulhasnain-dev/env-startup-check#readme",
+  "bugs": {
+    "url": "https://github.com/saimulhasnain-dev/env-startup-check/issues"
+  },
+  "author": "saimulhasnain-dev"
+}
